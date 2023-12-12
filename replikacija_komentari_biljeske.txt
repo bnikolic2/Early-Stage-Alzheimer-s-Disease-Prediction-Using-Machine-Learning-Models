@@ -1,0 +1,56 @@
+REPLIKACIJA REZULTATA
+
+- podjela dataseta - 80% (training) prema 20% (testing)
+	- 3 podskupa: train, validation, test
+	- train i validation - 50-50?
+
+- 5-fold cross validation - test na 5 dijelova
+
+
+
+
+The model was trained from training set data, and test set data were used to test unseen data. Cross-validation was carried out by dividing the dataset into three subsets. Model predictions are made using one subset of the data (test data) and model performance is evaluated using the other subsets (training and validation) of the data. The data had been preprocessed, and we randomly divided it into an 80:20 ratio, with 80% going to training and 20% gone to testing. Figure 1 describes the system workflow for predicting the Alzheimer's Disease at early stage (32, 33). ???
+
+# korelacijski koeficijent
+
+# informacijska dobit
+
+# chi-square
+
+
+KLASIFIKACIJSKI MODELI
+
+DECISION TREE
+
+RANDOM FOREST
+
+SVM
+
+XGBoost
+
+VOTING
+
+
+Validacija
+	- accuracy score
+	- precision
+	- recall
+	- F1 score
+- srednja vrijednost od n
+
+
+ Cross validation is performed which divides the whole dataset into n divisions which is of equal in size. The ML model is trained for every iteration with the n-1 divisions. The performance of the method is analyzed by the mean of all n-folds. In this work, the ML model was trained and tested 10 times by applying ten-fold cross validation to the model.
+
+
+MAKSIMUM 
+- accuracy - SVM = soft voting, random forest = hard voting, XGBoost, Decision Tree
+- precision - SVM, random forest = soft voting, hard voting, XGBoost, Decision Tree
+- recall - SVM = decision tree, RF = soft/hard vote, XGBoost
+- f1 score - SVM, hard voting, soft voting, random forest, decision tree, XGBoost
+
+
+PITANJA
+	- chi squared?
+	- provjerit postupak treniranja i validacije (k-fold cv)
+	- pitat za matricu zabune (150 vs 112)
+	- koliko detaljno trebamo znat teoriju svakog korištenog modela
